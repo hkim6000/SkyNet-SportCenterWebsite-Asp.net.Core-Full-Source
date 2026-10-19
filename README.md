@@ -168,8 +168,8 @@ With `app.app.runmode | 0` the sign-in page lists the staff. Everyone signs in w
 **Requirements:** .NET 10 SDK and Visual Studio (or any editor with the `dotnet` CLI).
 
 ```bash
-git clone https://github.com/hkim6000/SkyNet-SportWebsite-Asp.net.Core-Full-Source.git
-cd SkyNet-SportWebsite-Asp.net.Core-Full-Source
+git clone https://github.com/hkim6000/SkyNet-SportCenterWebsite-Asp.net.Core-Full-Source.git
+cd SkyNet-SportCenterWebsite-Asp.net.Core-Full-Source
 dotnet run
 ```
 
