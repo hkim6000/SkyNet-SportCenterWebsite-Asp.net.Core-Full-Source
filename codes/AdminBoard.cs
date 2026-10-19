@@ -391,6 +391,7 @@ namespace Sport.codes
             {
                 await Store.Log(c.Sbx, c.U.Id, log, k.Id + " · session " + (si + 1) + " · " + GetDataValue("rid"), true);
                 response.SetElementContents("ab-board", Board(c, saved, k, si));
+                response.ExecuteScript("AdminBoardJs.shown('" + Ui.Js(k.Id) + "'," + si + ");");
             }
             response.ExecuteScript("AdminBoardJs.toast('" + Ui.Js(msg) + "');");
             return response;
