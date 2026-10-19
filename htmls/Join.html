@@ -1,0 +1,32 @@
+<div class="jn-site" id="jn-site" data-page="Join" data-theme="{plhd_theme}" style="{plhd_style}">
+<div class="jn-strip"><div class="jn-wrap jn-strip-in"><span class="jn-today">{plhd_today}</span><span class="jn-strip-r"><span class="jn-demo" id="jn-demo" hidden></span><a href="MyRegistration" class="jn-sfind">Find my registration</a><a href="tel:{plhd_tel}">{plhd_phone}</a></span></div></div>
+<header class="jn-top">
+    <div class="jn-wrap jn-top-in">
+        <button type="button" class="jn-ibtn jn-burger" aria-label="Menu" onclick="JoinJs.openNav()"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <a class="jn-brand" href="Home"><svg class="jn-logo" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#0E2340"/><circle cx="20" cy="20" r="11" fill="none" stroke="var(--jn-accent)" stroke-width="3.2"/><path d="M9.5 17.5c6 2.2 15 2.2 21 0M12.5 28.5c3-5.5 3-11.5 0-17M27.5 28.5c-3-5.5-3-11.5 0-17" fill="none" stroke="var(--jn-accent)" stroke-width="2" stroke-linecap="round"/></svg><span><b id="jn-bname">{plhd_name}</b><small id="jn-btown">{plhd_town}</small></span></a>
+        <nav class="jn-nav" aria-label="Main">{plhd_nav}</nav>
+        <div class="jn-tools">
+            <button type="button" class="jn-ibtn" aria-label="Light or dark" title="Light or dark" onclick="JoinJs.toggleTheme()"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"/></svg></button>
+            <a class="jn-mem" id="jn-mem" href="SignIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c0-3.9 3.1-6.5 7-6.5s7 2.6 7 6.5"/></svg><span>Sign in</span></a>
+            <a class="jn-btn jn-btn-accent jn-cta" id="jn-cta" href="Join">Join</a>
+        </div>
+    </div>
+</header>
+<aside class="jn-drawer" id="jn-nav" aria-label="Menu">
+    <div class="jn-dr-top"><b>{plhd_name}</b><button type="button" class="jn-ibtn" aria-label="Close" onclick="JoinJs.closeNav()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <nav class="jn-dr-list">{plhd_drawer}</nav>
+    <a class="jn-btn jn-btn-accent jn-btn-wide" href="Join">Join</a>
+</aside>
+<div class="jn-scrim" id="jn-scrim" onclick="JoinJs.closeNav()"></div>
+<main class="jn-main" id="jn-main">{plhd_main}</main>
+<footer class="jn-foot">
+    <div class="jn-wrap jn-foot-in">
+        <div class="jn-fcol jn-fabout"><a class="jn-fbrand" href="Home"><svg class="jn-logo" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#0E2340"/><circle cx="20" cy="20" r="11" fill="none" stroke="var(--jn-accent)" stroke-width="3.2"/><path d="M9.5 17.5c6 2.2 15 2.2 21 0M12.5 28.5c3-5.5 3-11.5 0-17M27.5 28.5c-3-5.5-3-11.5 0-17" fill="none" stroke="var(--jn-accent)" stroke-width="2" stroke-linecap="round"/></svg><span id="jn-fname">{plhd_name}</span></a><p id="jn-ftag">{plhd_tagline}</p><p class="jn-faddr" id="jn-faddr">{plhd_addr}<br><a href="tel:{plhd_tel}">{plhd_phone}</a><br><a href="mailto:{plhd_email}">{plhd_email}</a></p></div>
+        <div class="jn-fcol"><b>Programs</b><a href="Sports">Sports</a><a href="Classes">Class schedule</a><a href="Instructors">Instructors</a><a href="Pass">Day pass</a></div>
+        <div class="jn-fcol"><b>Members</b><a href="Join">Sign up</a><a href="SignIn">Sign in</a><a href="Member">Member area</a><a href="MyRegistration">Find my registration</a></div>
+        <div class="jn-fcol"><b>The center</b><a href="About">About us</a><a href="Media">Media Center</a><a href="Contact">Contact</a><a href="AdminLogin">Staff sign in</a></div>
+    </div>
+    <div class="jn-wrap jn-copy"><span>&copy; 2026 <span id="jn-copyname">{plhd_name}</span></span><span>A fictional sports center built with the SkyNet Framework. People, classes and prices are invented.</span></div>
+</footer>
+<div class="jn-toast" id="jn-toast" role="status" aria-live="polite"></div>
+</div>

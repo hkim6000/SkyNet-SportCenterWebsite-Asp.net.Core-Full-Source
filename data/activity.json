@@ -1,0 +1,184 @@
+[
+  {
+    "when": "2026-10-18T16:06:00Z",
+    "user": "u-jamie",
+    "action": "check in",
+    "target": "Day pass · R7MBW4",
+    "ok": true
+  },
+  {
+    "when": "2026-10-18T15:18:00Z",
+    "user": "u-jamie",
+    "action": "signin",
+    "target": "jamie",
+    "ok": true
+  },
+  {
+    "when": "2026-10-18T13:30:00Z",
+    "user": "web",
+    "action": "refund request",
+    "target": "C-302 · Junior Tennis Academy",
+    "ok": true
+  },
+  {
+    "when": "2026-10-18T11:30:00Z",
+    "user": "web",
+    "action": "message",
+    "target": "Rachel Moreau · classes",
+    "ok": true
+  },
+  {
+    "when": "2026-10-18T10:30:00Z",
+    "user": "web",
+    "action": "cancel",
+    "target": "C-403 · Lead Climbing Course · 100% refund",
+    "ok": true
+  },
+  {
+    "when": "2026-10-18T10:30:00Z",
+    "user": "system",
+    "action": "offer seat",
+    "target": "C-403 · Lead Climbing Course",
+    "ok": true
+  },
+  {
+    "when": "2026-10-17T23:30:00Z",
+    "user": "web",
+    "action": "register",
+    "target": "C-102 · Stroke Clinic for Teens · pay at desk",
+    "ok": true
+  },
+  {
+    "when": "2026-10-17T20:30:00Z",
+    "user": "u-leo",
+    "action": "check in",
+    "target": "C-202 · session 6",
+    "ok": true
+  },
+  {
+    "when": "2026-10-17T19:30:00Z",
+    "user": "u-leo",
+    "action": "signin",
+    "target": "leo",
+    "ok": true
+  },
+  {
+    "when": "2026-10-17T18:30:00Z",
+    "user": "u-leo",
+    "action": "view",
+    "target": "payments",
+    "ok": false
+  },
+  {
+    "when": "2026-10-17T14:30:00Z",
+    "user": "u-nadia",
+    "action": "class",
+    "target": "C-203 · Adult Pickup League",
+    "ok": true
+  },
+  {
+    "when": "2026-10-17T13:30:00Z",
+    "user": "u-nadia",
+    "action": "signin",
+    "target": "nadia",
+    "ok": true
+  },
+  {
+    "when": "2026-10-17T10:30:00Z",
+    "user": "u-sam",
+    "action": "album",
+    "target": "Studios and the dojo",
+    "ok": true
+  },
+  {
+    "when": "2026-10-17T09:30:00Z",
+    "user": "u-sam",
+    "action": "save page",
+    "target": "Media Center",
+    "ok": true
+  },
+  {
+    "when": "2026-10-17T09:00:00Z",
+    "user": "u-sam",
+    "action": "signin",
+    "target": "sam",
+    "ok": true
+  },
+  {
+    "when": "2026-10-16T16:30:00Z",
+    "user": "u-morgan",
+    "action": "settings",
+    "target": "Brightwater Sports Center",
+    "ok": true
+  },
+  {
+    "when": "2026-10-16T14:30:00Z",
+    "user": "u-morgan",
+    "action": "user",
+    "target": "leo · board VE, classes V, instructors V",
+    "ok": true
+  },
+  {
+    "when": "2026-10-16T13:30:00Z",
+    "user": "u-morgan",
+    "action": "signin",
+    "target": "morgan",
+    "ok": true
+  },
+  {
+    "when": "2026-10-15T18:30:00Z",
+    "user": "u-jamie",
+    "action": "desk payment",
+    "target": "R-1031",
+    "ok": true
+  },
+  {
+    "when": "2026-10-14T16:30:00Z",
+    "user": "web",
+    "action": "cancel",
+    "target": "C-201 · Junior Hoops · 100% refund",
+    "ok": true
+  },
+  {
+    "when": "2026-10-13T14:30:00Z",
+    "user": "u-morgan",
+    "action": "refund",
+    "target": "C-104 · request declined",
+    "ok": true
+  },
+  {
+    "when": "2026-10-12T14:30:00Z",
+    "user": "u-morgan",
+    "action": "points",
+    "target": "M-1004 · +150 · Volunteer thank-you",
+    "ok": true
+  },
+  {
+    "when": "2026-10-10T14:30:00Z",
+    "user": "u-nadia",
+    "action": "cancel class",
+    "target": "C-503 · Prenatal Yoga · everyone refunded",
+    "ok": true
+  },
+  {
+    "when": "2026-10-10T10:30:00Z",
+    "user": "u-morgan",
+    "action": "refund",
+    "target": "C-202 · $60.00 approved",
+    "ok": true
+  },
+  {
+    "when": "2026-10-07T14:30:00Z",
+    "user": "u-morgan",
+    "action": "suspend",
+    "target": "M-1008 · Two card disputes",
+    "ok": true
+  },
+  {
+    "when": "2026-10-06T14:30:00Z",
+    "user": "u-morgan",
+    "action": "points",
+    "target": "M-1001 · -50 · Correction",
+    "ok": true
+  }
+]

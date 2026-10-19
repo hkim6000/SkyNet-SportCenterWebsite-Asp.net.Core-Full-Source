@@ -1,0 +1,9 @@
+bin/
+obj/
+.vs/
+*.user
+temp/sandbox/
+temp/admin/
+temp/uploads/
+logs/*.log
+images/uploads/

@@ -1,0 +1,21 @@
+<div class="ak-site ak-admin" id="ak-site" data-theme="light" style="{plhd_style}">
+<header class="ak-ahead">
+    <button type="button" class="ak-ibtn ak-burger" aria-label="Menu" onclick="AdminClassesJs.openNav()"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <a class="ak-abrand" href="Admin"><svg class="ak-logo" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#0E2340"/><circle cx="20" cy="20" r="11" fill="none" stroke="var(--ak-accent)" stroke-width="3.2"/><path d="M9.5 17.5c6 2.2 15 2.2 21 0M12.5 28.5c3-5.5 3-11.5 0-17M27.5 28.5c-3-5.5-3-11.5 0-17" fill="none" stroke="var(--ak-accent)" stroke-width="2" stroke-linecap="round"/></svg><b id="ak-bname">{plhd_name}</b><span>Admin</span></a>
+    <span class="ak-grow"></span>
+    <span class="ak-demo" id="ak-demo"></span>
+    <a class="ak-who" id="ak-who" href="AdminAccount"></a>
+    <a class="ak-view" href="Home" target="_blank" rel="noopener">View site</a>
+    <button type="button" class="ak-out" onclick="AdminClassesJs.signOut()">Sign out</button>
+</header>
+<aside class="ak-side" id="ak-nav" aria-label="Admin">
+    <div class="ak-nav-top"><span>Menu</span><button type="button" class="ak-ibtn" aria-label="Close" onclick="AdminClassesJs.closeNav()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <ul class="ak-amenu" id="ak-menu"></ul>
+</aside>
+<div class="ak-scrim" id="ak-scrim" onclick="AdminClassesJs.closeNav()"></div>
+<main class="ak-amain" id="ak-main"><p class="ak-loading">Loading&hellip;</p></main>
+<div class="ak-modal" id="ak-modal" onclick="if(event.target===this)AdminClassesJs.closeModal()">
+    <div class="ak-mbox" role="dialog" aria-modal="true"><button type="button" class="ak-ibtn ak-mclose" aria-label="Close" onclick="AdminClassesJs.closeModal()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button><div id="ak-mbody"></div></div>
+</div>
+<div class="ak-toast" id="ak-toast" role="status" aria-live="polite"></div>
+</div>

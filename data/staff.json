@@ -1,0 +1,91 @@
+[
+  {
+    "id": "u-morgan",
+    "login": "morgan",
+    "name": "Morgan Reyes",
+    "title": "Center manager",
+    "hash": "pbkdf2$100000$KPDsjgt/1OfV935I66HQjA==$UUhm72Qwmp4lZVxmFQsdr0VOeODQ6QoBdiJvwGJudjU=",
+    "admin": true,
+    "active": true,
+    "demo": true,
+    "instructor": "",
+    "perms": {}
+  },
+  {
+    "id": "u-jamie",
+    "login": "jamie",
+    "name": "Jamie Park",
+    "title": "Front desk lead",
+    "hash": "pbkdf2$100000$QybRwX/x2arCalbAz4fSGg==$ECMNpzyhjvB8cKBDBiygnV+yVOnZ6koVMFpxGvzyi6g=",
+    "admin": false,
+    "active": true,
+    "demo": true,
+    "instructor": "",
+    "perms": {
+      "board": "VE",
+      "classes": "V",
+      "registrations": "VE",
+      "payments": "VE",
+      "members": "VE",
+      "messages": "VE",
+      "sports": "V",
+      "instructors": "V"
+    }
+  },
+  {
+    "id": "u-nadia",
+    "login": "nadia",
+    "name": "Nadia Brooks",
+    "title": "Program coordinator",
+    "hash": "pbkdf2$100000$iekr0hMy1zoAyAYtcveiFQ==$z+A9u23a6ZWfFJBGCCKZWjRshNyr2lb2St2caG8/gHU=",
+    "admin": false,
+    "active": true,
+    "demo": true,
+    "instructor": "",
+    "perms": {
+      "sports": "VE",
+      "classes": "VEX",
+      "board": "VE",
+      "instructors": "VE",
+      "registrations": "VEX",
+      "payments": "V",
+      "members": "V",
+      "pages": "V",
+      "media": "V",
+      "activity": "V"
+    }
+  },
+  {
+    "id": "u-leo",
+    "login": "leo",
+    "name": "Leo Martins",
+    "title": "Basketball coach",
+    "hash": "pbkdf2$100000$rIXt9IynsvKTPdgGh7kmCg==$2AipDWyiczfrhvwGsqz2ry+Co+b5QWvDHg2JYstaqpc=",
+    "admin": false,
+    "active": true,
+    "demo": true,
+    "instructor": "i-leo",
+    "perms": {
+      "board": "VE",
+      "classes": "V",
+      "instructors": "V"
+    }
+  },
+  {
+    "id": "u-sam",
+    "login": "sam",
+    "name": "Sam Ortiz",
+    "title": "Media editor",
+    "hash": "pbkdf2$100000$tm7UfFjJo9VOV/ax0lvxYQ==$ps2DQ6vsGTWQRQW9K9oWTsDmUu2+Kxki1K5U8WDq9LQ=",
+    "admin": false,
+    "active": true,
+    "demo": true,
+    "instructor": "",
+    "perms": {
+      "media": "VEX",
+      "pages": "VE",
+      "sports": "V",
+      "instructors": "V"
+    }
+  }
+]

@@ -1,0 +1,32 @@
+<div class="sd-site" id="sd-site" data-page="Sport" data-theme="{plhd_theme}" style="{plhd_style}">
+<div class="sd-strip"><div class="sd-wrap sd-strip-in"><span class="sd-today">{plhd_today}</span><span class="sd-strip-r"><span class="sd-demo" id="sd-demo" hidden></span><a href="MyRegistration" class="sd-sfind">Find my registration</a><a href="tel:{plhd_tel}">{plhd_phone}</a></span></div></div>
+<header class="sd-top">
+    <div class="sd-wrap sd-top-in">
+        <button type="button" class="sd-ibtn sd-burger" aria-label="Menu" onclick="SportJs.openNav()"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <a class="sd-brand" href="Home"><svg class="sd-logo" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#0E2340"/><circle cx="20" cy="20" r="11" fill="none" stroke="var(--sd-accent)" stroke-width="3.2"/><path d="M9.5 17.5c6 2.2 15 2.2 21 0M12.5 28.5c3-5.5 3-11.5 0-17M27.5 28.5c-3-5.5-3-11.5 0-17" fill="none" stroke="var(--sd-accent)" stroke-width="2" stroke-linecap="round"/></svg><span><b id="sd-bname">{plhd_name}</b><small id="sd-btown">{plhd_town}</small></span></a>
+        <nav class="sd-nav" aria-label="Main">{plhd_nav}</nav>
+        <div class="sd-tools">
+            <button type="button" class="sd-ibtn" aria-label="Light or dark" title="Light or dark" onclick="SportJs.toggleTheme()"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"/></svg></button>
+            <a class="sd-mem" id="sd-mem" href="SignIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c0-3.9 3.1-6.5 7-6.5s7 2.6 7 6.5"/></svg><span>Sign in</span></a>
+            <a class="sd-btn sd-btn-accent sd-cta" id="sd-cta" href="Join">Join</a>
+        </div>
+    </div>
+</header>
+<aside class="sd-drawer" id="sd-nav" aria-label="Menu">
+    <div class="sd-dr-top"><b>{plhd_name}</b><button type="button" class="sd-ibtn" aria-label="Close" onclick="SportJs.closeNav()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <nav class="sd-dr-list">{plhd_drawer}</nav>
+    <a class="sd-btn sd-btn-accent sd-btn-wide" href="Join">Join</a>
+</aside>
+<div class="sd-scrim" id="sd-scrim" onclick="SportJs.closeNav()"></div>
+<main class="sd-main" id="sd-main">{plhd_main}</main>
+<footer class="sd-foot">
+    <div class="sd-wrap sd-foot-in">
+        <div class="sd-fcol sd-fabout"><a class="sd-fbrand" href="Home"><svg class="sd-logo" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#0E2340"/><circle cx="20" cy="20" r="11" fill="none" stroke="var(--sd-accent)" stroke-width="3.2"/><path d="M9.5 17.5c6 2.2 15 2.2 21 0M12.5 28.5c3-5.5 3-11.5 0-17M27.5 28.5c-3-5.5-3-11.5 0-17" fill="none" stroke="var(--sd-accent)" stroke-width="2" stroke-linecap="round"/></svg><span id="sd-fname">{plhd_name}</span></a><p id="sd-ftag">{plhd_tagline}</p><p class="sd-faddr" id="sd-faddr">{plhd_addr}<br><a href="tel:{plhd_tel}">{plhd_phone}</a><br><a href="mailto:{plhd_email}">{plhd_email}</a></p></div>
+        <div class="sd-fcol"><b>Programs</b><a href="Sports">Sports</a><a href="Classes">Class schedule</a><a href="Instructors">Instructors</a><a href="Pass">Day pass</a></div>
+        <div class="sd-fcol"><b>Members</b><a href="Join">Sign up</a><a href="SignIn">Sign in</a><a href="Member">Member area</a><a href="MyRegistration">Find my registration</a></div>
+        <div class="sd-fcol"><b>The center</b><a href="About">About us</a><a href="Media">Media Center</a><a href="Contact">Contact</a><a href="AdminLogin">Staff sign in</a></div>
+    </div>
+    <div class="sd-wrap sd-copy"><span>&copy; 2026 <span id="sd-copyname">{plhd_name}</span></span><span>A fictional sports center built with the SkyNet Framework. People, classes and prices are invented.</span></div>
+</footer>
+<div class="sd-toast" id="sd-toast" role="status" aria-live="polite"></div>
+</div>
