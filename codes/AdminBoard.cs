@@ -160,13 +160,13 @@ namespace Sport.codes
             if (pick != string.Empty)
             {
                 SportClass k = site.Classes.First(x => x.Id == pick);
-                response.SetElementContents("ab-board", Board(c, site, k, DefaultSession(k, now)));
+                response.SetElementContents("ab-board", BoardHtml(c, site, k, DefaultSession(k, now)));
                 response.ExecuteScript("AdminBoardJs.shown('" + Ui.Js(pick) + "'," + DefaultSession(k, now) + ");");
             }
             return response;
         }
 
-        private static string Board(Ctx c, SiteData site, SportClass k, int si)
+        private static string BoardHtml(Ctx c, SiteData site, SportClass k, int si)
         {
             DateTime now = Store.Now(site);
             bool canE = Access.Can(c.U, AreaKey, 'E');
@@ -285,7 +285,7 @@ namespace Sport.codes
                 return response;
             }
             int si = int.TryParse(GetDataValue("bsess"), out int s) && s >= 0 ? s : DefaultSession(k, Store.Now(site));
-            response.SetElementContents("ab-board", Board(c, site, k, si));
+            response.SetElementContents("ab-board", BoardHtml(c, site, k, si));
             response.ExecuteScript("AdminBoardJs.shown('" + Ui.Js(k.Id) + "'," + Math.Clamp(si, 0, Math.Max(0, k.Dates.Count - 1)) + ");");
             return response;
         }
@@ -390,7 +390,7 @@ namespace Sport.codes
             if (saved != null && k != null)
             {
                 await Store.Log(c.Sbx, c.U.Id, log, k.Id + " · session " + (si + 1) + " · " + GetDataValue("rid"), true);
-                response.SetElementContents("ab-board", Board(c, saved, k, si));
+                response.SetElementContents("ab-board", BoardHtml(c, saved, k, si));
                 response.ExecuteScript("AdminBoardJs.shown('" + Ui.Js(k.Id) + "'," + si + ");");
             }
             response.ExecuteScript("AdminBoardJs.toast('" + Ui.Js(msg) + "');");

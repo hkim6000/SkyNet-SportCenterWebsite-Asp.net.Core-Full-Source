@@ -236,7 +236,7 @@ namespace Sport.codes
                 sb.Append("<a class=\"cd-coachrow\" href=\"Instructor?id=" + Uri.EscapeDataString(coach.Id) + "\">" + Ui.Face(coach.Photo, coach.Name, string.Empty) + "<span><small>Your coach</small><b>" + Ui.Enc(coach.Name) + "</b><em>" + Ui.Enc(coach.Title) + "</em><p>" + Ui.Enc(coach.Bio) + "</p></span></a>");
             }
             sb.Append("<div class=\"cd-policy\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z\"/><path d=\"M9 12l2 2 4-4\"/></svg><div><h3>Cancellation and refunds</h3><ul><li>More than " + s.FullRefundHours + " hours before the first session: full refund.</li><li>Between " + s.FullRefundHours + " and " + s.CancelHours + " hours before: " + s.LatePct + "% refund.</li><li>Less than " + s.CancelHours + " hours before, or after the start: ask the front desk" + (s.StartedPct > 0 ? " (" + s.StartedPct + "% after the start)" : string.Empty) + ".</li><li>Waitlist offers must be paid within " + s.OfferHours + " hours.</li></ul></div></div>");
-            sb.Append("</div><aside class=\"cd-side\"><div class=\"cd-pbox\" id=\"cd-panel\">" + Panel(site, k, null, now) + "</div></aside></section>");
+            sb.Append("</div><aside class=\"cd-side\"><div class=\"cd-pbox\" id=\"cd-panel\">" + PanelHtml(site, k, null, now) + "</div></aside></section>");
             return new View { Title = k.Title, Desc = Ui.SportName(site, k.Sport) + " class: " + k.Title + ", " + Ui.NameOf(Rules.Levels, k.Level).ToLowerInvariant() + ", " + Rules.AgeRule(k).Replace("&ndash;", "-") + ".", Main = sb.ToString(), Nav = "classes" };
         }
 
@@ -256,7 +256,7 @@ namespace Sport.codes
             return "<div class=\"cd-ph\"><div><b>" + Ui.Money(k.Price) + "</b><small>for all " + Ui.Plural(k.Dates.Count, "session", "sessions") + "</small></div>" + Ui.StatePill("cd", st) + "</div><div class=\"cd-seatbar\"><i style=\"width:" + pct + "%\"></i></div><p class=\"cd-seatt\">" + sub + "</p>";
         }
 
-        private static string Panel(SiteData site, SportClass k, global::Sport.Models.ClubMember? me, DateTime now)
+        private static string PanelHtml(SiteData site, SportClass k, global::Sport.Models.ClubMember? me, DateTime now)
         {
             Settings s = site.Settings;
             StringBuilder sb = new StringBuilder(PriceHead(site, k, now));
@@ -388,7 +388,7 @@ namespace Sport.codes
             {
                 response.ExecuteScript("ClassJs.signedOut();");
             }
-            response.SetElementContents("cd-panel", Panel(site, k, me, Store.Now(site)));
+            response.SetElementContents("cd-panel", PanelHtml(site, k, me, Store.Now(site)));
             response.ExecuteScript("ClassJs.payMode();");
             return response;
         }
